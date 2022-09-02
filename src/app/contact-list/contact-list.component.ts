@@ -14,14 +14,14 @@ export class ContactListComponent implements OnInit {
   constructor(private router: Router, private contactservice: ContactService) {}
 
   ngOnInit(): void {
-    if(localStorage.getItem("editUserId")!=null){
+    // if(localStorage.getItem("editUserId")!= null){
       this.contactservice.getUsers().subscribe(data=> { this.contact = data; });
-    }
+    // }
   }
 
   editUser(contact: Contact): void { 
     localStorage.removeItem("editUserId"); 
-    localStorage.setItem("editUserId", contact.id.toString()); 
+    localStorage.setItem("editUserId", contact.id.toString());
     this.router.navigate(['update']);
   }; 
 

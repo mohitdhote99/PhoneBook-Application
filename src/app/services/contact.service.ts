@@ -5,6 +5,7 @@ import { Contact } from '../model/contact.model';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ContactService {
   
   baseUrl:string = 'http://localhost:3000/contact';

@@ -20,7 +20,7 @@ export class UpdateContactComponent implements OnInit {
   
   ngOnInit(): void {
     
-    if(localStorage.getItem("username") != null){
+    if(localStorage.getItem("username") !== ''||localStorage.getItem("username") !== null){
       let userId = localStorage.getItem("editUserId");
       if(!userId) { 
         alert("user not found");

@@ -145,8 +145,6 @@ td {
     transition: 0.25s all linear;
 }  
   td:hover{
-    background: rgb(213 213 213);
     color: rgb(77, 77, 77);
-    font-weight: 900;
     cursor: pointer;
   }
