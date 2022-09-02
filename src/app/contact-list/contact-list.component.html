@@ -1,0 +1,27 @@
+<table> 
+    <thead> 
+    <tr> 
+      <th>First Name</th> 
+      <th>Last Name</th> 
+      <th>Phoneno</th>
+      <th>Action</th>
+    </tr> 
+    </thead> 
+    <tbody> 
+    <tr *ngFor="let cont of contact"> 
+      <td class="hidden">{{cont.id}}</td>
+      <td>{{cont.firstName}}</td> 
+      <td>{{cont.lastName}}</td> 
+      <td>{{cont.phoneNo}}</td>
+      <td>
+          <button class="btn" (click)="deleteUser(cont)"> Delete</button> 
+          <button class="btn" style="margin-left: 20px;"(click)="editUser(cont)">Edit</button>
+      </td>
+    </tr> 
+    <!-- <tr *ngIf="!cont || cont.length==0"> 
+      <th colspan="5"> 
+        <p>Sorry No conts Available</p> 
+      </th> 
+    </tr>  -->
+    </tbody> 
+  </table> 

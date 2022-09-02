@@ -1,0 +1,152 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --Project-theme: linear-gradient(182deg, #56077e, #007893);
+    --Project-theme-hover: linear-gradient(182deg, #007893,#56077e);
+}
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+    padding:0;
+    /* text-transform: capitalize; */
+}
+
+.hidden{
+    visibility: hidden;
+    display: none;
+}
+.btn{
+    text-decoration: none;
+    color:white;
+    background:var(--Project-theme);
+    border-radius: 5px;
+    padding:8px 10px;
+    border:none;
+    transition: 0.5s all linear;
+}
+.btn:hover{
+    background:var(--Project-theme-hover);
+}
+.head {
+    color: rgb(120 118 122);
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+.head::first-letter{
+    color:rgb(46, 0, 212);
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.edit {
+    text-align: center;
+    font-family: cursive;
+    color: #353286;
+    margin-bottom: 20px;
+}
+div .btn a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+div .btn {
+    margin: 10px 10px;
+}
+.btnContainer{
+    width:fit-content;
+    margin:auto;
+}
+form{
+    width:50%;
+    margin:auto;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    padding:20px 10px;
+    overflow: hidden;
+}
+form label {
+    color: #221c9c;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+form input {
+    width: 100%;
+    display: block;
+    margin: 5px 0px 5px 0px;
+    padding: 5px 5px;
+    border: 1px solid #b5b5b5;
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+button{
+    padding:8px 20px;
+    border:none;
+    width: fit-content;
+    background:teal;
+    color:white;
+    cursor:pointer;
+}
+button:hover{
+    background:rgb(42, 161, 161);
+    box-shadow: 1px 1px grey;
+}
+.imag_user{
+    width:200px;
+    height:200px;
+    margin:10px 10px;
+}
+.imag_user img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px #958c8c;
+}
+footer{
+    background-color: rgb(22, 19, 19);
+    color:white;
+    text-align: center;
+    height:100px;
+    line-height: 100px;
+}
+.text-danger{
+    color:rgb(219, 8, 8);
+    margin-bottom: 5px;
+}
+table{
+    background-color: rgb(253, 253, 253);
+    border: 1px solid grey;
+    width:80%;
+    margin:auto;
+    border-collapse:collapse;
+  }
+  thead{
+      background: var(--Project-theme);
+  }
+  th{
+    padding: 10px 0px;
+    color: rgb(255, 255, 255);
+    background:var(--linrgrad);
+    /* background-color: var(--mainColor); */
+    text-transform: capitalize;
+}
+tr{
+  color:grey;
+}
+td {
+    text-align: center;
+    border: 1px solid grey;
+    padding: 6px 0px;
+    margin: 10px 0px;
+    width: auto;
+    text-transform: capitalize;
+    transition: 0.25s all linear;
+}  
+  td:hover{
+    background: rgb(213 213 213);
+    color: rgb(77, 77, 77);
+    font-weight: 900;
+    cursor: pointer;
+  }
